@@ -1,133 +1,154 @@
 <body>
-    <html>
-    <h1 align="center">
+<html>
+           <h1 align="center">
         WEB TI ARIF | 2026
     </h1>
     <table border="1" align="center" cellspacing="0" cellpadding="10px">
         <tr>
             <td>
-                <a href="index.html">Home
-            </td>
+                <a href="index.html">Home</td>
             <td>
-                <a href="about.html">Profile
-            </td>
+                <a href="about.html">Profile</td>
             <td>
-                <a href="kontak.html">Contact
-            </td>
+                <a href="kontak.html">Contact</td>
             <td>
                 <a href="mahasiswaa.html">Data Mahasiswa</a>
             </td>
         </tr>
     </table>
     <center>
-        <br><br>
-        <h2>Data Mahasiswa</h2>
-        <table border="1" cellpadding="5px">
-            <tr>
-                <td rowspan="2">Baris 1 dan 2, Kolom 1</td>
-                <td colspan="2">Baris 1, Kolom 1</td>
-            </tr>
-            <tr>
-                <td> Baris 2, Kolom 1</td>
-                <td> Baris 2, Kolom 2</td>
-                <!-- <td> Baris 2, Kolom 3</td> -->
-            </tr>
-        </table>
-        <br><br>
-        <table border="1" cellpadding="5px">
-            <tr>
-                <td>1,1</td>
-                <td>1,2</td>
-                <td>1,3</td>
-                <td>1,4</td>
-            </tr>
-            <tr>
-                <td>2,1</td>
-                <td align="center" colspan="2" rowspan="2"> ? </td>
-                <td>2,3</td>
-            </tr>
-            <tr>
-                <td>3,1</td>
-                <td colspan="2">3,2</td>
-            </tr>
-            <tr>
-                <td>4,1</td>
-                <td>4,2</td>
-                <td>4,3</td>
-                <td>4,4</td>
-            </tr>
+    <br><br>
+    <h2>Data Mahasiswa</h2>
+    <table border="1" cellpadding="5px" >
+        <tr>
+            <td rowspan="2">Baris 1 dan 2, Kolom 1</td>
+            <td colspan="2">Baris 1, Kolom 1</td>
+        </tr>
+        <tr>
+            <td> Baris 2, Kolom 1</td>
+            <td> Baris 2, Kolom 2</td>
+            <!-- <td> Baris 2, Kolom 3</td> -->
+        </tr>
+    </table>
+    <br><br>
+    <table border="1" cellpadding="5px">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td align="center" colspan="2" rowspan="2"> ? </td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td colspan="2">3,2</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
 
-        </table>
-        <br><br>
-        <form action="#" method="post">
+    </table>
+    <br><br>
+    <form action="#" method="post">
+    <table cellpadding="8" cellspacing="0">
+        
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="nama"></td>
+        </tr>
 
-            <!-- Nama -->
-            <label>Nama:</label><br>
-            <input type="text" name="nama"><br><br>
+        <tr>
+            <td>NIM</td>
+            <td><input type="number" name="nim"></td>
+        </tr>
 
-            <!-- NIM -->
-            <label>NIM:</label><br>
-            <input type="number" name="nim"><br><br>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
 
-            <!-- Password -->
-            <label>Password:</label><br>
-            <input type="password" name="password"><br><br>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email"></td>
+        </tr>
 
-            <!-- Email -->
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+        <tr>
+            <td>No HP</td>
+            <td><input type="tel" name="nohp"></td>
+        </tr>
 
-            <!-- No HP -->
-            <label>No HP:</label><br>
-            <input type="tel" name="nohp"><br><br>
+        <tr>
+            <td>Website</td>
+            <td><input type="url" name="website"></td>
+        </tr>
 
-            <!-- Website -->
-            <label>Website Pribadi:</label><br>
-            <input type="url" name="website"><br><br>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="tgl_lahir"></td>
+        </tr>
 
-            <!-- Tanggal Lahir -->
-            <label>Tanggal Lahir:</label><br>
-            <input type="date" name="tgl_lahir"><br><br>
+        <tr>
+            <td>Warna Favorit</td>
+            <td><input type="color" name="warna"></td>
+        </tr>
 
-            <!-- Warna Favorit -->
-            <label>Warna Favorit:</label><br>
-            <input type="color" name="warna"><br><br>
+        <tr>
+            <td>Tingkat Kepuasan</td>
+            <td><input type="range" name="kepuasan" min="0" max="100"></td>
+        </tr>
 
-            <!-- Tingkat Kepuasan -->
-            <label>Tingkat Kepuasan:</label><br>
-            <input type="range" name="kepuasan" min="0" max="100"><br><br>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+                <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                <input type="radio" name="jk" value="Perempuan"> Perempuan
+            </td>
+        </tr>
 
-            <!-- Jenis Kelamin -->
-            <label>Jenis Kelamin:</label><br>
-            <input type="radio" name="jk" value="Laki-laki"> Laki-laki<br>
-            <input type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+        <tr>
+            <td>Hobi</td>
+            <td>
+                <input type="checkbox" name="hobi" value="Membaca"> Membaca
+                <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+                <input type="checkbox" name="hobi" value="Musik"> Musik
+            </td>
+        </tr>
 
-            <!-- Hobi -->
-            <label>Hobi:</label><br>
-            <input type="checkbox" name="hobi" value="Membaca"> Membaca<br>
-            <input type="checkbox" name="hobi" value="Olahraga"> Olahraga<br>
-            <input type="checkbox" name="hobi" value="Musik"> Musik<br><br>
+        <tr>
+            <td>Upload Foto</td>
+            <td><input type="file" name="foto"></td>
+        </tr>
 
-            <!-- Upload Foto -->
-            <label>Upload Foto:</label><br>
-            <input type="file" name="foto"><br><br>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="alamat" rows="4" cols="30"></textarea></td>
+        </tr>
 
-            <!-- Alamat -->
-            <label>Alamat:</label><br>
-            <textarea name="alamat" rows="4" cols="30"></textarea><br><br>
+        <tr>
+            <td>Jurusan</td>
+            <td>
+                <select name="jurusan">
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="RPL">Rekayasa Perangkat Lunak</option>
+                </select>
+            </td>
+        </tr>
 
-            <!-- Jurusan -->
-            <label>Jurusan:</label><br>
-            <select name="jurusan">
-                <option value="TI">Teknik Informatika</option>
-                <option value="SI">Sistem Informasi</option>
-                <option value="RPL">Rekayasa Perangkat Lunak</option>
-            </select><br><br>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Kirim">
+            </td>
+        </tr>
 
-            <!-- Tombol Submit -->
-            <input type="submit" value="Kirim">
-
-        </form>
-
-    </html>
+    </table>
+</form>
+</html>
 </body>
