@@ -12,13 +12,13 @@
         <table border="1" align="center" cellspacing="0" cellpadding="10px">
             <tr>
                 <td>
-                    <a href="index.html">Home</td>
+                    <a href="index.php">Home</td>
                 <td>
-                    <a href="about.html">Profile</td>
+                    <a href="about.php">Profile</td>
                 <td>
-                    <a href="kontak.html">Contact</td>
+                    <a href="kontak.php">Contact</td>
                 <td>
-                    <a href="mahasiswa.html">Data Mahasiswa</a>
+                    <a href="mahasiswa.php">Data Mahasiswa</a>
                 </td>
             </tr>
         </table>

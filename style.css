@@ -1,126 +1,229 @@
-/* Import font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-/* Body */
-body {
-    background: linear-gradient(135deg, #4f46e5, #9333ea);
-    color: #333;
+/* =========================
+   BODY
+========================= */
+body{
+    background:#f4f6f9;
+    color:#333;
+    min-height:100vh;
 }
 
-/* Judul */
-h1 {
-    text-align: center;
-    margin: 30px 0;
-    color: white;
-    letter-spacing: 2px;
+/* =========================
+   JUDUL
+========================= */
+h1{
+    text-align:center;
+    margin:30px 0;
+    color:#4f46e5;
+    font-size:48px;
+    font-weight:600;
 }
 
-/* Navbar */
-table {
-    margin: auto;
-    border-collapse: collapse;
+/* =========================
+   NAVBAR
+========================= */
+table{
+    border-collapse:collapse;
 }
 
-table td {
-    padding: 10px 15px;
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:40px;
 }
 
-/* Link jadi button */
-a {
-    text-decoration: none;
-    color: white;
-    background: rgba(255,255,255,0.15);
-    padding: 10px 18px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
+.navbar a{
+    text-decoration:none;
+    background:#4f46e5;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:500;
 }
 
-/* Hover effect */
-a:hover {
-    background: white;
-    color: #4f46e5;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+.navbar a:hover{
+    background:#3730a3;
+    transform:translateY(-3px);
 }
 
-/* Container */
-p, h3 {
-    width: 70%;
-    margin: 20px auto;
-    text-align: center;
-    color: white;
+/* =========================
+   SUB JUDUL
+========================= */
+h2{
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
 }
 
-/* Card effect */
-form, .container {
-    width: 60%;
-    margin: 40px auto;
-    background: rgba(255,255,255,0.95);
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    animation: fadeIn 1s ease;
+/* =========================
+   TOMBOL TAMBAH DATA
+========================= */
+.tambah{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
 }
 
-/* Input */
-input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    transition: 0.3s;
+.tambah a{
+    text-decoration:none;
+    background:#10b981;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
 }
 
-/* Fokus input */
-input:focus, textarea:focus, select:focus {
-    border-color: #4f46e5;
-    outline: none;
-    box-shadow: 0 0 5px #4f46e5;
+.tambah a:hover{
+    background:#059669;
 }
 
-/* Button */
-input[type="submit"], button {
-    background: #4f46e5;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+/* =========================
+   TABEL DATA
+========================= */
+table{
+    width:95%;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-/* Hover button */
-input[type="submit"]:hover, button:hover {
-    background: #3730a3;
-    transform: scale(1.05);
+th{
+    background:#4f46e5;
+    color:white;
+    padding:15px;
+    text-align:center;
 }
 
-/* Gambar */
-img {
-    display: block;
-    margin: 30px auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
 }
 
-/* Animasi */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+tr:hover{
+    background:#f9fafb;
+}
+
+/* =========================
+   FOTO
+========================= */
+img{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* =========================
+   TOMBOL AKSI
+========================= */
+.btn-edit{
+    background:#3b82f6;
+    color:white;
+    padding:8px 15px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-right:5px;
+}
+
+.btn-edit:hover{
+    background:#2563eb;
+}
+
+.btn-hapus{
+    background:#ef4444;
+    color:white;
+    padding:8px 15px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.btn-hapus:hover{
+    background:#dc2626;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:40px 0;
+}
+
+.pagination a{
+    text-decoration:none;
+    background:white;
+    color:#4f46e5;
+    padding:10px 15px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pagination a:hover{
+    background:#4f46e5;
+    color:white;
+}
+
+/* =========================
+   FORM
+========================= */
+form{
+    width:60%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    border-color:#4f46e5;
+}
+
+button,
+input[type="submit"]{
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover,
+input[type="submit"]:hover{
+    background:#3730a3;
 }

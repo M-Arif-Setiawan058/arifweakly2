@@ -9,27 +9,42 @@
     <table border="1" align="center" cellspacing="0" cellpadding="10px">
         <tr>
             <td>
-                <a href="index.html">Home</a></td>
+                <a href="index.php">Home</a></td>
             <td>
-                <a href="about.html">Profile</a></td>
+                <a href="about.php">Profile</a></td>
             <td>
-                <a href="kontak.html">Contact</a></td>
+                <a href="kontak.php">Contact</a></td>
             <td>
-                <a href="mahasiswaa.html">Data Mahasiswa</a>
+                <a href="mahasiswaa.php">Data Mahasiswa</a>
             </td>
         </tr>
     </table>
     <center>
     <br><br>
     <h2>Data Mahasiswa</h2>
+    <a href="tambahdata.php"><button>Tambah Data</button></a>
     <table border="1" cellpadding="5px" >
         <tr>
-            <td rowspan="2">Baris 1 dan 2, Kolom 1</td>
-            <td colspan="2">Baris 1, Kolom 1</td>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Program Studi</th>
+            <th>Email</th>
+            <th>Nomor Whatsapp</th>
+            <th>Foto</th>
         </tr>
         <tr>
-            <td> Baris 2, Kolom 1</td>
-            <td> Baris 2, Kolom 2</td>
+            <td>1</td>
+            <td>Sean Alexander</td>
+            <td>13242521111</td>
+            <td>Akutansi</td>
+            <td>seanwannnn8898@gmail.com </td>
+            <td>088215731111</td>
+            <td><img src="assets/gunung.jpg" width="100px" alt="gunung" />
+            <td>
+                <a href="editdata.php"><button>Edit</Button></a>
+                <a href="hapusdata.php"><button>Hapus</Button></a>
+            <td>
             <!-- <td> Baris 2, Kolom 3</td> -->
         </tr>
     </table>
