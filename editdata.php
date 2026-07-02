@@ -61,7 +61,7 @@ Email<br>
 
 <p>
 Nomor HP<br>
-<input type="text" name="nohp" value="<?= $mhs['nohp']; ?>">
+<input type="text" name="no_hp" value="<?= $mhs['no_hp']; ?>">
 </p>
 
 <button type="submit" name="submit">Simpan</button>

@@ -18,7 +18,8 @@ $no = 1;
 
 <h1 align="center">
     WEB TI ARIF | 2026
-</h1>
+
+<br><br>
 
 <table border="1" align="center" cellspacing="0" cellpadding="10">
     <tr>
