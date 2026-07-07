@@ -8,7 +8,7 @@ $mhs = tampildata("SELECT * FROM mahasiswa WHERE id=$id")[0];
 
 if(isset($_POST["submit"])){
 
-    if(ubah($_POST) > 0){
+    if(edit($_POST) > 0){
         echo "
         <script>
             alert('Data berhasil diubah');
@@ -35,7 +35,21 @@ if(isset($_POST["submit"])){
 
 <h2>Edit Data Mahasiswa</h2>
 
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
+    <tr>
+    <td>Foto Lama</td>
+    <td>
+        <img src="assets/<?= $mhs['foto']; ?>" width="120">
+    </td>
+</tr>
+
+<tr>
+    <td>Ganti Foto</td>
+    <td>
+        <input type="file" name="foto">
+    </td>
+</tr>
+<input type="hidden" name="fotoLama" value="<?= $mhs['foto']; ?>">
 
 <input type="hidden" name="id" value="<?= $mhs['id']; ?>">
 

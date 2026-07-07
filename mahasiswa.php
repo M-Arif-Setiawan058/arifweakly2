@@ -64,7 +64,7 @@ $no = 1;
         <td><?= $mhs['email']; ?></td>
         <td><?= $mhs['no_hp']; ?></td>
         <td>
-            <img src="assets/<?= $mhs['foto']; ?>" width="100">
+       <img src="assets/gunung.jpg" width="250px" alt="gunung" />
 </td>
 
 <td>

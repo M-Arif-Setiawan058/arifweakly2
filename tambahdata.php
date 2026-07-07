@@ -28,8 +28,13 @@ if(isset($_POST["submit"])){
 <body>
 
 <h2>Tambah Data Mahasiswa</h2>
-
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
+    <tr>
+    <td>Foto</td>
+    <td>
+        <input type="file" name="foto" required>
+    </td>
+</tr>
 
 <table>
 

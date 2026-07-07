@@ -48,7 +48,20 @@ function hapus($id)
 
     return mysqli_affected_rows($koneksi);
 }
-function ubah($data)
+function upload()
+{
+    $namaFile = $_FILES['foto']['name'];
+    $tmp = $_FILES['foto']['tmp_name'];
+
+    if ($namaFile == "") {
+        return false;
+    }
+
+    move_uploaded_file($tmp, "assets/" . $namaFile);
+
+    return $namaFile;
+}
+function edit($data)
 {
     global $koneksi;
 
